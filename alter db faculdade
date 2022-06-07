@@ -1,58 +1,58 @@
 ALTER TABLE departamento CHANGE cod_departamento cod_departamento int(4) AUTO_INCREMENT, 
-						 CHANGE nome_departamento nome_departamento char(30) NOT NULL;
+			 CHANGE nome_departamento nome_departamento char(30) NOT NULL;
 
 ALTER TABLE professor CHANGE cod_professor cod_professor int(4) AUTO_INCREMENT, 
-					  CHANGE nome nome_professor char(20) NOT NULL, 
+		      CHANGE nome nome_professor char(20) NOT NULL, 
                       CHANGE sobrenome sobrenome_professor char(50) NOT NULL,
                       CHANGE fk_cod_departamento fk_cod_departamento int(4) NOT NULL;
                       
 ALTER TABLE curso CHANGE cod_curso cod_curso int(4) AUTO_INCREMENT, 
-				  CHANGE nome_curso nome_curso char(20), 
-				  CHANGE fk_cod_departamento fk_cod_departamento int(4);
+		  CHANGE nome_curso nome_curso char(20), 
+		  CHANGE fk_cod_departamento fk_cod_departamento int(4);
                   
 ALTER TABLE turma CHANGE cod_turma cod_turma int(4) AUTO_INCREMENT, 
-				  CHANGE periodo periodo char(8), 
-				  CHANGE fk_cod_curso fk_cod_curso int(4),
+		  CHANGE periodo periodo char(8), 
+		  CHANGE fk_cod_curso fk_cod_curso int(4),
                   ADD COLUMN num_alunos int(4) AFTER periodo;
                   
 ALTER TABLE disciplina CHANGE cod_disciplina cod_disciplina int(4) AUTO_INCREMENT, 
-					   CHANGE nome_disciplina nome_disciplina char(20), 
-					   CHANGE carga_horaria carga_horaria int(4) NOT NULL,
-					   CHANGE descricao descricao char(50),
-					   CHANGE n_alunos num_alunos int(4) NOT NULL,
-					   CHANGE fk_cod_departamento fk_cod_departamento int(4) NOT NULL;
+		       CHANGE nome_disciplina nome_disciplina char(20), 
+		       CHANGE carga_horaria carga_horaria int(4) NOT NULL,
+		       CHANGE descricao descricao char(50),
+		       CHANGE n_alunos num_alunos int(4) NOT NULL,
+		       CHANGE fk_cod_departamento fk_cod_departamento int(4) NOT NULL;
     
 ALTER TABLE telefone CHANGE cod_telefone cod_telefone int(4) AUTO_INCREMENT,  
-					 CHANGE fk_cod_tipo fk_cod_tipo int(4);
+		     CHANGE fk_cod_tipo fk_cod_tipo int(4);
 					
 ALTER TABLE endereco CHANGE cod_endereco cod_endereco int(4) AUTO_INCREMENT,  
-					 CHANGE nome_rua nome_rua char(50) NOT NULL,
-					 CHANGE numero_rua numero_rua int(4) NOT NULL,
-					 CHANGE CEP CEP char(8) NOT NULL;
+		     CHANGE nome_rua nome_rua char(50) NOT NULL,
+		     CHANGE numero_rua numero_rua int(4) NOT NULL,
+		     CHANGE CEP CEP char(8) NOT NULL;
                   
 ALTER TABLE aluno CHANGE RA RA int(4) AUTO_INCREMENT,  
-				  CHANGE nome_mae nome_mae char(50),
+		  CHANGE nome_mae nome_mae char(50),
                   CHANGE nome_pai nome_pai char(50),
                   CHANGE fk_cod_curso fk_cod_curso int(4) NOT NULL,
                   CHANGE fk_cod_turma fk_cod_turma int(4) NOT NULL,
-				  CHANGE fk_cod_endereco fk_cod_endereco int(4) NOT NULL,
+		  CHANGE fk_cod_endereco fk_cod_endereco int(4) NOT NULL,
                   ADD COLUMN sexo char(1) AFTER status;
                   
 ALTER TABLE telefone_aluno CHANGE cod_tel_aluno cod_tel_aluno int(4) AUTO_INCREMENT,  
-						   CHANGE fk_RA fk_RA int(4) NOT NULL,
-						   CHANGE fk_cod_telefone fk_cod_telefone int(4) NOT NULL;  
+			   CHANGE fk_RA fk_RA int(4) NOT NULL,
+			   CHANGE fk_cod_telefone fk_cod_telefone int(4) NOT NULL;  
                      
 ALTER TABLE historico CHANGE cod_historico cod_historico int(4) AUTO_INCREMENT,  
-					  CHANGE fk_RA fk_RA int(4) NOT NULL; 
+		      CHANGE fk_RA fk_RA int(4) NOT NULL; 
 				
 ALTER TABLE disciplina_professor CHANGE fk_cod_professor fk_cod_professor int(4),  
-						         CHANGE fk_cod_disciplina fk_cod_disciplina int(4); 
+				 CHANGE fk_cod_disciplina fk_cod_disciplina int(4); 
                        
 ALTER TABLE curso_disciplina CHANGE fk_cod_curso fk_cod_curso int(4),  
-							 CHANGE fk_cod_disciplina fk_cod_disciplina int(4); 
+			     CHANGE fk_cod_disciplina fk_cod_disciplina int(4); 
                              
 ALTER TABLE historico_disciplina CHANGE fk_cod_disciplina fk_cod_disciplina int(4),  
-							     CHANGE fk_cod_historico fk_cod_historico int(4);                              
+				 CHANGE fk_cod_historico fk_cod_historico int(4);                              
                                  
 ALTER TABLE aluno_disciplina CHANGE fk_cod_disciplina fk_cod_disciplina int(4),  
-							 CHANGE fk_RA fk_RA int(4); 
+			     CHANGE fk_RA fk_RA int(4); 
