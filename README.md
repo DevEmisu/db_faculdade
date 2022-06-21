@@ -1,10 +1,10 @@
 <h1 align="center"> Projeto Banco faculdade </h1>
 
-<b> introdução </b>
+<b> introdução: </b>
     Este projeto foi feito durante um curso tecnico de DBA no SENAI, tudo neste 
 projeto foi feito por mim (Emerson), incluindo modelo logico, script e alters, consiste em um banco de dados para gerenciamento de uma faculdade. Os objetivos deste banco de dados são: Realizar controle centralizado de alunos, professores, cursos, disciplinas, histórico escolar e turmas.
 
-<b> Regras de negocio </b>
+<b> Regras de negocio: </b>
     Uma faculdade de nome Universidade SENAI deseja mudar o seu siste-ma, e para isso
 ela precisa criar e implementar um novo banco de dados que permi-ta a ela, realizar o 
 controle centralizado de alunos, professores, cursos, disciplinas, histórico escolar
@@ -31,9 +31,11 @@ seguintes regras de negócio.
 •Professores são identificados por um código de professor
 
 <b> Modelo ER </b>
+![modelo ER completo](https://user-images.githubusercontent.com/105245393/174909889-0fd58103-d733-4de2-8497-ebc41723c85e.png)
 
 
 
 <b> Normalização </b>
+![modelo Logico com formas normais](https://user-images.githubusercontent.com/105245393/174909588-e259aa67-59c2-4498-a3b4-f06efc089c24.png)
 
 
