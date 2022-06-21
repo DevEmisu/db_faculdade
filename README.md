@@ -1,7 +1,3 @@
-Este projeto tem o intuito academico de aprender o uso do GIT e implementar um banco de dados SQL
+<h1 align="center"> Projeto Banco faculdade </h1>
 
-comandos basicos GIT 
-- git status (verifica se existe novas versões)
-- git add .  (prepara os arquivos)
-- git commit -m "breve comentario" (publica a nova versão)
-- git push -u origin main (publica no GitHub)
+Projeto feito durante um curso tecnico de DBA, tudo neste projeto foi feito por mim (Emerson), incluindo modelo logico, script e alters.
