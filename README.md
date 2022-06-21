@@ -2,7 +2,7 @@
 
 <b> introdução: </b>
     Este projeto foi feito durante um curso tecnico de DBA no SENAI, tudo neste 
-projeto foi feito por mim (Emerson), incluindo modelo logico, script e alters, consiste em um banco de dados para gerenciamento de uma faculdade. Os objetivos deste banco de dados são: Realizar controle centralizado de alunos, professores, cursos, disciplinas, histórico escolar e turmas.
+projeto foi feito por mim (Emerson), incluindo modelo conceitual, modelo logico, script e alters, consiste em um banco de dados para gerenciamento de uma faculdade. Os objetivos deste banco de dados são: Realizar controle centralizado de alunos, professores, cursos, disciplinas, histórico escolar e turmas.
 
 <b> Regras de negocio: </b>
     Uma faculdade de nome Universidade SENAI deseja mudar o seu siste-ma, e para isso
