@@ -31,7 +31,8 @@ seguintes regras de negócio.
 •Professores são identificados por um código de professor
 
 <b> Modelo ER </b>
-![modelo ER completo](https://user-images.githubusercontent.com/105245393/174909889-0fd58103-d733-4de2-8497-ebc41723c85e.png)
+![modelo ER completo](https://user-images.githubusercontent.com/105245393/174910127-bb0ea57f-c417-463f-952e-fa9f5778b560.png)
+
 
 
 
