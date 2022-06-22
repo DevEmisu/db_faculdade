@@ -31,13 +31,13 @@ seguintes regras de negócio.
 •Cada professor é vinculado a um departamento;<br> 
 •Professores são identificados por um código de professor;<br>
 
-<b> Modelo ER: </b>
+<b> Modelo Conceitual: </b>
 ![modelo ER completo](https://user-images.githubusercontent.com/105245393/174910127-bb0ea57f-c417-463f-952e-fa9f5778b560.png)
 
 
 
 
-<b> Normalização: </b>
+<b> Modelo Logico: </b>
 ![modelo Logico com formas normais](https://user-images.githubusercontent.com/105245393/174909588-e259aa67-59c2-4498-a3b4-f06efc089c24.png)
 
 
